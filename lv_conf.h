@@ -187,10 +187,14 @@ typedef void * lv_fs_drv_user_data_t;
 #endif
 
 /*1: Add a `user_data` to drivers and objects*/
+#ifndef LV_USE_USER_DATA
 #define LV_USE_USER_DATA        0
+#endif
 
 /*1: Show CPU usage and FPS count in the right bottom corner*/
+#ifndef LV_USE_PERF_MONITOR
 #define LV_USE_PERF_MONITOR     0
+#endif
 
 /*1: Use the functions and types from the older API if possible */
 #define LV_USE_API_EXTENSION_V6  1
